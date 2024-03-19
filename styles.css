@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header{
+    min-height: 7rem;
+    background-color: lightblue;
+}
+
+nav, main, aside{
+    height: 15rem;
+}
+
+nav{
+    background-color: lightcoral;
+}
+
+main{
+    background-color: aquamarine;
+}
+
+aside{
+    background-color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 15rem 1fr;
+        height: 100vh;
+    }
+
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    nav, main, aside{
+        height: unset;
+    }
+} */
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    height: 100vh;
+    gap: 10px;
+}
+
+aside{
+    display: none;
+}
+
+header, nav, main, aside, footer{
+    background-color: lightcoral;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+body{
+    display: grid;
+    grid-template-rows: none;
+    grid-template-areas: 
+        "header header header header"
+        "aside nav nav nav"
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "footer footer footer footer"
+    ;
+    gap: 10px;
+    height: 100vh;
+}
+
+aside{
+    display: unset;
+}
+
+header, nav, main, aside, footer{
+    background-color: lightcoral;
+    color: black;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+}
+

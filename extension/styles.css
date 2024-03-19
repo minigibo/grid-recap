@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+    ;
+    height: 100vh;
+    gap: 10px;
+    margin: 20px;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+nav img{
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+img1, img2, img3, img4, img5, img6, img7{
+    background-color: lightcoral;
+    color: black;
+    height: calc((100vh - 9 * 10px - 2 * 20px) / 8);
+}
+
+img1{
+    grid-area: img1;
+}
+
+img2{
+    grid-area: img2;
+}
+
+img3{
+    grid-area: img3;
+}
+
+img4{
+    grid-area: img4;
+}
+
+img5{
+    grid-area: img5;
+}
+
+img6{
+    grid-area: img6;
+}
+
+img7{
+    grid-area: img7;
+}

@@ -36,36 +36,36 @@ nav img{
     box-sizing: border-box;
 }
 
-img1, img2, img3, img4, img5, img6, img7{
-    background-color: lightcoral;
-    color: black;
-    height: calc((100vh - 9 * 10px - 2 * 20px) / 8);
+.image{
+    background-color: aqua;
+    width: 100%;
+    height:auto;
 }
 
-img1{
+image1{
     grid-area: img1;
 }
 
-img2{
+image2{
     grid-area: img2;
 }
 
-img3{
+image3{
     grid-area: img3;
 }
 
-img4{
+image4{
     grid-area: img4;
 }
 
-img5{
+image5{
     grid-area: img5;
 }
 
-img6{
+image6{
     grid-area: img6;
 }
 
-img7{
+image7{
     grid-area: img7;
 }
